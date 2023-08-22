@@ -39,10 +39,17 @@
         ],
 
     ];
+   
+    //la funzione isset di php restituisce true se la variabile è stata definita e ha un valore diverso da null
+    //altrimenti restituisce false 
 
+    //la funzione empty di php restituisce true se la variabile è vuota
+    //e false se contiene un valore
+    //il modo più veloce per capire se una variabile contiene valori
     if(isset($_POST['parking']) && !empty($_POST['parking'])) {
         $temp = [];
-
+        // variabile super globale $_POST con il quale i dati sono inviati al server in maniera separata
+        //e non visibili nell'url
         foreach($hotels as $hotel) {
             $park = $hotel['parking'] ? 'si' : 'no';
             if($park == $_POST['parking']) {
@@ -64,6 +71,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hotel</title>
+        <!-- CDN -->
         <link rel="stylesheet" href="/bonus/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     </head>
