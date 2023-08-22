@@ -61,7 +61,7 @@
                     <h3 class="mt-4">Hotel Disponibili</h3>
                     <table class='table text-capitalize'>
                         <thead>
-                            <tr>
+                            <tr class="table-danger">
                                 <th class='col'>name</th>
                                 <th class='col'>description</th>
                                 <th class='col'>parking</th>
