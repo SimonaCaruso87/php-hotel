@@ -5,7 +5,7 @@
 }
 
 td, th {
-    border: 1px solid #272626;
+    border: 5px solid #272626;
     text-align: left;
     padding: 10px;
 }
@@ -14,4 +14,8 @@ td, th {
 even/odd servono per selezionare gli elementi pari o dispari */
 tr:nth-child(even) {
     background-color: #dfdddd;
+}
+
+table{
+    border: solid 5px black;
 }
